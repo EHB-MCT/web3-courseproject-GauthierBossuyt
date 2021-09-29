@@ -24,8 +24,6 @@ async function loadData() {
     createGraph();
 
     await fetch('./data/miserables.json').then(res => res.json()).then(json => generateForceGraph(json));
-
-    generateMap();
 }
 
 function createGraph() {
@@ -81,7 +79,7 @@ function yAxis(g) {
 }
 
 function generateForceGraph(data) {
-    graph = ForceGraph()(document.getElementById('chart')).graphData(data).width(window.innerWidth - 100).height(500).nodeAutoColorBy('group');
+    graph = ForceGraph()(document.getElementById('chart')).graphData(data).width(window.innerWidth - 100).height(500).nodeAutoColorBy('group').nodeLabel('id');
 }
 
 

@@ -1,18 +1,98 @@
-#content {
+body{
+    margin-bottom: 20vh;
+}
+
+#content,
+#Leaflet,
+#map {
     text-align: left;
-    background-color: rgba(238, 238, 238, 0.2);
+    background-color: rgba(238, 238, 238, 0.267);
     margin: 50px;
     border-radius: 20px;
 }
 
-#content h2{
+#content h2 {
     padding: 30px 0 0 20px;
 }
 
-#graph{
+#graph {
     padding: 20px;
 }
 
-.rect:hover{
+.rect:hover {
     opacity: 0.66;
+}
+
+#Leaflet {
+    height: 80vh;
+}
+
+#content a, #maps a{
+    color: #dc3545;
+    text-decoration: none;
+    font-style: italic;
+}
+
+svg rect {
+    fill: #2A2C39;   /* map background colour */
+  }
+  .country{
+    fill: #d0d0d0;   /* country colour */
+    stroke: #2A2C39; /* country border colour */
+    stroke-width: 1; /* country border width */
+  }
+  .country-on{
+    fill: #606479;   /* highlight colour for selected country */
+  }
+  .countryLabel{
+      margin: 500px;
+    display: none;   /* hide all country labels by default */
+  }
+  .countryName{
+    fill: #FFFAFF;   /* country label text colour */
+  }
+
+  .country:hover{
+      fill: #dc3545;
+  }
+
+#map{
+    height: 80vh;
+}
+
+svg{
+    border-radius: 20px;
+}
+
+h1{
+    margin-left: 50px;
+    padding-top: 50px;
+}
+
+h3{
+    margin-left: 50px;
+    padding-top: 20px;
+}
+
+#map #country_name, #country_detail {
+    position: absolute;
+    color: white;
+    background-color: #2a2c396c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#map #country_name{
+    bottom: 80px;
+    right: 120px;
+}
+
+#map #country_detail{
+    bottom: 97px;
+    text-align: left;
+    left: 120px;
+}
+
+#country_detail p {
+    margin: 0px;
 }
