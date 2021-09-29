@@ -1,0 +1,18 @@
+#content {
+    text-align: left;
+    background-color: rgba(238, 238, 238, 0.2);
+    margin: 50px;
+    border-radius: 20px;
+}
+
+#content h2{
+    padding: 30px 0 0 20px;
+}
+
+#graph{
+    padding: 20px;
+}
+
+.rect:hover{
+    opacity: 0.66;
+}
