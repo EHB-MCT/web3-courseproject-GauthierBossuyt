@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Noto+Sans+Display:ital@0;1&family=Work+Sans:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+    <title>Recommender System</title>
+</head>
+
+<body>
+
+    <h1>Recommender System</h1>
+
+    <section id="intro">
+        <h2>What is a <a href="https://en.wikipedia.org/wiki/Recommender_system" target="_blank">recommender system?</a>
+        </h2>
+        <p>A recommender system seeks to predict what a user might like based on collected information.</p>
+    </section>
+
+    <section id="recommenders">
+        <h2>Types of recommender systems:</h2>
+        <ul>
+            <li>
+                <h3>Popularity</h3>
+                <p>
+                    Recommends songs based of the song's popularity. The songs popularity depends on the metric used
+                    (time, user interactions, user ratings, ...).
+                </p>
+            </li>
+            <li>
+                <h3>Content-based</h3>
+                <p>
+                    A content-based recommender uses attributes from items the user interacted with to recommend similar
+                    items. The TF-IDF is a common method used for this type of recommender.
+                </p>
+            </li>
+            <li>
+                <h3>Collaborative</h3>
+                <p>
+                    Uses collaborative filtering to recommend items based of interactions by similar users.
+                </p>
+            </li>
+            <li>
+                <h3>Hybrid</h3>
+                <p>
+                    A combination of the collaborative and content-based recommender. The hybrid recommender performs
+                    better, because it uses high variance and enables variety and weighting.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="filters">
+        <h2>Types of filtering:</h2>
+        <ul>
+            <li>
+                <h3><a href="https://en.wikipedia.org/wiki/Collaborative_filtering" target="_blank">Collaborative
+                        filtering</a></h3>
+                <p>
+                    Uses data from people, who have similar taste to make predictions about what you might like. Spotify
+                    uses this type of filtering to create an user's Discover Weekly playlist.
+                </p>
+            </li>
+            <li>
+                <h3><a href="https://en.wikipedia.org/wiki/Natural_language_processing" target="_blank">Natural Language
+                        Processing</a></h3>
+                <p>
+                    Using computers to process and analyze natural language data to automaticly summarize the main
+                    points of a text document. Spotify's NLP converts playlist to text documents to analyze how lyrical
+                    patterns relate to each other. Spotify's NLP tries to locate places where the term is used and tries
+                    to predict the meaning of the context. For example, when using the word 'ABBA' 'Dancing Queen' has a
+                    high score with the adjectives 'perky' and 'nonviolent'.
+                </p>
+                <img src="https://miro.medium.com/max/700/0*WPgZt0Gzu_p-cc3l.png" alt="Example ABBA Spotify NLP"
+                    srcset="">
+            </li>
+            <li>
+                <h3>Audio Models</h3>
+                <p>
+                    Processing raw audio to create a range of characteristics, such as key, energy, tempo, ... . This
+                    way new songs from unknown artists can be recommended.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="feedback">
+        <h2>The diffence between explicit and implicit feedback:</h2>
+        <ul>
+            <li>
+                <h3>Explicit</h3>
+                <p>
+                    Explicit feedback is direct and quantitative data collected from users. Explicit feedback is rare,
+                    because rating items isn't done frequently.
+                </p>
+            </li>
+            <li>
+                <h3>Implicit</h3>
+                <p>
+                    Implicit feedback is indirect and made from a users interactions. Implicit feedback comes in quite
+                    large quantities and allows to make recommendations in real time. Nowadays most recommender systems
+                    are built with implicit feedback.
+                </p>
+            </li>
+        </ul>
+    </section>
+
+    <section id="metrics">
+        <h2>Metrics to evaluate a recommender system:</h2>
+        <ul>
+            <li>
+                <h3>Accuracy (for classification problems)</h3>
+            </li>
+            <li>
+                <h3>RMSE (for regression problems)</h3>
+            </li>
+            <li>
+                <h3>Hit Ratio @ 10</h3>
+
+            </li>
+        </ul>
+    </section>
+</body>
+
+</html>

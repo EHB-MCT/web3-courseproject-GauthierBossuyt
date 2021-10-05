@@ -1,0 +1,47 @@
+/* font-family: 'Noto Sans Display', sans-serif;
+font-family: 'Work Sans', sans-serif; */
+
+body {
+    margin: 0% 30vw 0% 30vw;
+    background-color: #171717;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+    font-weight: 600;
+    font-family: 'Noto Sans Display', sans-serif;
+    margin-bottom: 5vh;
+}
+
+h2 {
+    font-size: 30px;
+    font-weight: 600;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+li {
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Noto Sans Display', sans-serif;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Work Sans', sans-serif; 
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-style: italic;
+}
+
+a:hover {
+    color: rgb(207, 64, 64);
+}
+
+section {
+    margin-bottom: 10vh;
+}
