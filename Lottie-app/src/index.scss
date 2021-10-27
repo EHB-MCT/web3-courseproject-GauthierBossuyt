@@ -1,0 +1,76 @@
+$light_accent: #ffffff;
+$light_background: #f6f6f6;
+$light_text: #000;
+
+$dark_accent: #292d32;
+$dark_background: #1e1e1e;
+$dark_text: #fcfefe;
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  background-color: $dark_background;
+  color: $dark_text;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.content {
+  margin: 25px;
+}
+
+.nav {
+  padding: 20px;
+  margin: 0;
+  background-color: $dark_accent;
+
+  .title {
+    padding: 0;
+    margin: 0;
+    font-size: 22px;
+    display: inline-block;
+  }
+
+  .link {
+    font-size: 22px;
+    margin-left: 30px;
+  }
+}
+
+a {
+  color: $dark_text;
+  text-decoration: none;
+}
+
+.animation {
+  width: 400px;
+  height: 400px;
+
+  .button {
+    background-color: $dark_background;
+    color: $dark_text;
+    border: solid 1px white;
+    border-radius: 5px;
+    padding: 10px 20px;
+    box-shadow: 18px 18px 20px #111414ee;
+  }
+
+  .button:hover {
+    cursor: pointer;
+  }
+}
+.scroll {
+  height: 100vh;
+}
+
+lottie-player {
+  width: 95vw;
+}
